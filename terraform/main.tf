@@ -156,7 +156,7 @@ resource "aws_scheduler_schedule" "transacai_demo_injector_schedule" {
     mode = "OFF"
   }
 
-  schedule_expression = "rate(1 minute)"
+  schedule_expression = "rate(5 minute)"
 
   target {
     arn      = aws_lambda_function.inject_sample_transactions.arn

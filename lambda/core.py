@@ -54,7 +54,7 @@ def inject_sample_transactions_handler(event, context):
   Select n records
   """
   # n can be 2 to 4 at random
-  n = random.randint(2, 4)
+  n = random.randint(4, 6)
   selected_records = random.sample(records, n)
   print(f"Selected {n} records at random")
 
